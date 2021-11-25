@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+
+    <link rel="stylesheet" href="style/applicationScreenStyle.css">
+
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Flutter</h1>
+            <input placeholder="Search" class="searchfield" />
+        </header>
+        
+        <main>
+            <div id="Profile">
+                <div id="myProfile">
+                    <img class="avatar" src="media/avatar.jpg" alt="Veselin" />
+                    <label>Veselin Todorov</label>
+                </div>
+                <div id="Info">
+                    <p>
+                        <label>Posts</label>
+                        <label id="number">1</label>
+                    </p>
+                    <p>
+                        <label>Reactions</label>
+                        <label id="number">7</label>
+                    </p>
+                    <button id="logout">Log Out</button>
+                </div>
+            </div>
+            <div id="Feed">
+                <div id="newPost">
+                    <img class="avatar" id="newPostAvatar" src="media/avatar.jpg" alt="Veselin" />
+                    <input placeholder="Say something" id="SaySomething" />
+                </div>
+               
+                <div class="post" id="post1">
+                    <img class="avatar" id="feedAvatar" src="media/avatar.jpg" alt="Veselin" />
+                    <div class="content">
+                        <p><b>Lachezar Peshterliev</b> <bdi>&#8226; 5 seconds ago</bdi>  </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quisquam natus? Molestiae recusandae provident, sit accusamus, aperiam pariatur error ipsa perspiciatis iste quidem itaque quis quasi similique hic exercitationem fuga?</p>
+                        <img class="thumbs" src="media/thumbs_up.ico" alt="thumbs_up">
+                        <label class="thumbsLabel" for="thumbs">5</label>
+                        <img class="thumbs" src="media/thumbs_down.ico" alt="">
+                        <label class="thumbsLabel" for="thumbs">3</label>
+                    </div>
+                    <img class="X" src="media/computer-icons-window-button-png-favpng-LjLhAeNZCVR48dFC83Epwz5ye.jpg" alt="X">
+                </div>
+                
+                <div class="post" id="post2">
+                    <img class="avatar" id="feedAvatar" src="media/avatar.jpg" alt="Veselin" />
+                    <div class="content">
+                        <p><b>Veselin Todorov</b> <bdi>&#8226; last month</bdi>  </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <img class="thumbs" src="media/thumbs_up.ico" alt="thumbs_up">
+                        <label class="thumbsLabel" for="thumbs">9</label>
+                        <img class="thumbs" src="media/thumbs_down.ico" alt="">
+                        <label class="thumbsLabel" for="thumbs">6</label>
+                    </div>
+                    <img class="X" src="media/computer-icons-window-button-png-favpng-LjLhAeNZCVR48dFC83Epwz5ye.jpg" alt="X">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
