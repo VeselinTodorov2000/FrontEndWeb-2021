@@ -1,0 +1,142 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin-left: 400px;
+  margin-top: 200px;
+  height: 768px;
+  width: 1336px;
+}
+
+/* Add your CSS here */
+header {
+  background: linear-gradient(green, white);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.heading {
+  width: 90%;
+  margin: 20px;
+  padding-top:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  display: flex;
+  width: 78%;
+  justify-self: center;
+  padding-top: 20px;
+  font-size: 24px;
+  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.heading-buttons {
+  width: 22%;
+}
+
+.heading-buttons ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+
+#navlist {
+  list-style: none;
+}
+
+#navlist li button{
+  background: none;
+  border-width: 3px;
+  border-style: dotted;
+  border-color: blue;
+  color:white;
+  height: 50px;
+  width: 120%;
+}
+
+.add-student {
+  width: 95%;
+  display: flex;
+  margin-left: 30px;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.add-student-button {
+  background: purple;
+  width: 300px;
+  border-radius: 5px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  border:dotted;
+  border-color: purple;
+  border-width: 3px;
+}
+
+.add-student input {
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  height: 35px;
+}
+
+.add-students button:hover {
+  background: peru;
+}
+
+ul.students {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li.student-in-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+li.student-in-list p {
+  margin-left: 40px;
+}
+
+li.student-in-list input {
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+li.student-in-list:nth-child(1) {
+  background: white !important;
+}
+
+li.student-in-list:nth-child(3) p{
+  text-decoration: line-through;
+}
+
+li.student-in-list:nth-child(odd) {
+  background: skyblue;
+}
+
+li.student-in-list:nth-child(even) {
+  background: pink;
+}
+
+li.student-in-list:nth-child(3) {
+  content: '✓';
+  background: green !important;
+  color: white;
+}
